@@ -13,4 +13,5 @@ COPY . .
 ENV FLASK_APP=flaskr
 ENV FLASK_ENV=development
 
+RUN flask init-db
 CMD [ "flask", "run", "--host=0.0.0.0"]
