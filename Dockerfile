@@ -5,8 +5,8 @@ WORKDIR /usr/src/app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements-dev.txt ./
+RUN pip install --no-cache-dir -r requirements-dev.txt
 
 COPY . .
 
