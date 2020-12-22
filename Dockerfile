@@ -13,4 +13,6 @@ COPY . .
 ENV FLASK_APP=flaskr
 ENV FLASK_ENV=development
 
+RUN pip install -e .
+
 CMD [ "flask", "run", "--host=0.0.0.0"]
